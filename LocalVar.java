@@ -3,7 +3,6 @@ public class LocalVar {
     public static void main(String[] args) {
         int x = 10;               // x is a local variable
 
-
         String message = "Hello, world!";// message is also a local
 
         System.out.println("x = " + x);
