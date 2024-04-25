@@ -8,10 +8,7 @@ public class LocalVar {
         System.out.println("x = " + x);
         System.out.println("message = " + message);
 
-        if (x > 5) {
-            String result = "x is greater than 5"; //result is loacl varible
-            System.out.println(result);
-        }
+
 
 
         for (int i = 0; i < 3; i++) {
