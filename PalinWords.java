@@ -6,6 +6,7 @@ public class PalinWords {
         System.out.print("Input: words = ");
         String input = scanner.nextLine();
         input = input.substring(input.indexOf('[') + 1, input.lastIndexOf(']'));
+    //startIndex (inclusive) up to but not including the character at the endIndex (exclusive).
         String[] words = input.split(",\\s*");
 
         String firstPalindrome = null;
@@ -30,7 +31,8 @@ public class PalinWords {
         {
             System.out.println(firstPalindrome);
         }
-        else {
+        else
+        {
             System.out.println("\" \" ");
         }
 
