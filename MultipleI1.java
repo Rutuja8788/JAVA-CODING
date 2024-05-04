@@ -6,12 +6,14 @@ interface API
         System.out.println("Default API");
     }
 }
-interface Interface1 extends API {
+interface Interface1 extends API
+{
 
     void display();
 }
 
-interface Interface2 extends API {
+interface Interface2 extends API
+{
 
     void print();
 }
