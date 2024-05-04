@@ -14,7 +14,7 @@ public class Overloading
 
     public static void main(String[] args)
     {
-        Overloading obj = new MethodOverloading();
+        Overloading obj = new Overloading();
         obj.show(3);
         obj.show(4, 5);
     }
