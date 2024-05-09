@@ -1,6 +1,7 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
+
 class Map2
 {
     public static void main(String[] args) {
