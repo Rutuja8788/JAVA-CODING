@@ -24,6 +24,10 @@ public class Filter1 {
         //using stream API
 
         s2 = s1.stream().filter(n -> n % 2 == 0).collect(Collectors.toList());
+        //s1.stream().filter(n->n%2==0).forEach(n->System.out.println(n));
+        //s1.stream().filter(n->n%2==0).forEach(System.out::println);
+
+
         System.out.println(s2);
     }
 }
