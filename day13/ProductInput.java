@@ -3,6 +3,7 @@ package day13;
 import java.util.Scanner;
 public class ProductInput
 {
+
         public static Product getProductDetailsFromUser()
         {
             Scanner scanner = new Scanner(System.in);

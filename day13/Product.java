@@ -4,7 +4,7 @@ package day13;
 public class Product
 {
     public int id;
-   public  String name;
+   public   String name;
     public float price;
 
     public Product(int id, String name, float price) {
