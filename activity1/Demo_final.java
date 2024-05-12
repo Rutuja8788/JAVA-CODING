@@ -2,7 +2,7 @@ package activity1;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Demo1 {
+public class Demo_final {
     public static int MoreThanFiveChar(List<String> names) {
         return (int) names.stream()
                 .filter(name -> name.length() > 5)
