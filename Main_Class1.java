@@ -1,4 +1,4 @@
-import activity1.Demo1;
+import activity1.Demo_final;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.List;
@@ -21,10 +21,10 @@ public class Main_Class1 {
 
             switch (choice) {
                 case 1:
-                    System.out.println("Number of names with more than 5 characters: " + Demo1.MoreThanFiveChar(names));
+                    System.out.println("Number of names with more than 5 characters: " + Demo_final.MoreThanFiveChar(names));
                     break;
                 case 2:
-                    Optional<String> name = Demo1.findNameWithFiveCharacters(names);
+                    Optional<String> name = Demo_final.findNameWithFiveCharacters(names);
                     if (name.isPresent()) {
                         System.out.println("Name with exactly 5 characters: " + name.get());
                     } else {
@@ -32,11 +32,11 @@ public class Main_Class1 {
                     }
                     break;
                 case 3:
-                    Map<Character, List<String>> groupedNames = Demo1.groupNamesByFirstCharacter(names);
-                    groupedNames.forEach((firstChar, nameList) -> System.out.println(firstChar + ": " + nameList));
+                    Map<Character, List<String>> groupedNames = Demo_final.groupNamesByFirstCharacter(names);
+                    groupedNames.forEach((n1, n2) -> System.out.println(n1 + ": " + n2));
                     break;
                 case 4:
-                    List<String> sortedNames = Demo1.sortNamesAscending(names);
+                    List<String> sortedNames = Demo_final.sortNamesAscending(names);
                     System.out.println("Sorted names: " + sortedNames);
                     break;
                 case 0:
