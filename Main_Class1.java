@@ -17,14 +17,14 @@ public class Main_Class1 {
                     " Sort names in ascending order ignoring case");
             System.out.println("Enter your choice (1-4, 0 to exit):");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); // Consum
 
             switch (choice) {
                 case 1:
                     System.out.println("Number of names with more than 5 characters: " + Demo_final.MoreThanFiveChar(names));
                     break;
                 case 2:
-                    Optional<String> name = Demo_final.findNameWithFiveCharacters(names);
+                    Optional<String> name = Demo_final.FiveCharacters(names);
                     if (name.isPresent()) {
                         System.out.println("Name with exactly 5 characters: " + name.get());
                     } else {
@@ -32,11 +32,11 @@ public class Main_Class1 {
                     }
                     break;
                 case 3:
-                    Map<Character, List<String>> groupedNames = Demo_final.groupNamesByFirstCharacter(names);
+                    Map<Character, List<String>> groupedNames = Demo_final.FirstCharacter(names);
                     groupedNames.forEach((n1, n2) -> System.out.println(n1 + ": " + n2));
                     break;
                 case 4:
-                    List<String> sortedNames = Demo_final.sortNamesAscending(names);
+                    List<String> sortedNames = Demo_final.sortNames(names);
                     System.out.println("Sorted names: " + sortedNames);
                     break;
                 case 0:
