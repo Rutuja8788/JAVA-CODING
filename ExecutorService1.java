@@ -29,7 +29,7 @@ public class ExecutorService1
             executor.submit(task);
         }
 
-        // Shutdown the executor once all tasks are completed
+
         executor.shutdown();
     }
 }
