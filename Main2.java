@@ -1,15 +1,31 @@
 import threding.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 public class Main2
 {
     public static void main(String[] args)
     {
         ThreadingEX methods = new ThreadingEX();
-        Syncro synchronizedMethods = new Syncro();
+        Syncro synchro= new Syncro();
 
-        // Start threads by calling start() method
+
         methods.start();
-        synchronizedMethods.start();
+        synchro.start();
+        methods.printNumbers();
         methods.printCharacters();
-        synchronizedMethods.printCharactersSynchronized();
+        synchro.printNumbers();
+
+
+        synchro.printCharacters();
+        ExecutorService executor = Executors.newFixedThreadPool(3);
+
+
+        for (int i = 0; i < 5; i++) {
+            ThreadPoolEX task = new ThreadPoolEX(i);
+            executor.submit(task);
+        }
+
+        executor.shutdown();
     }
 }

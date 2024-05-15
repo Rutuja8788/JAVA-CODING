@@ -10,9 +10,9 @@ public class ThreadingEX extends Thread
 
     public void printNumbers()
     {
-        for (int i = 1; i <= 5; i++)
+        for (int i = 1; i <= 1000; i++)
         {
-            System.out.println("Printing number: " + i);
+             System.out.println("Printing number: " + i);
             try
             {
                 Thread.sleep(1000); // Sleep for 1 second

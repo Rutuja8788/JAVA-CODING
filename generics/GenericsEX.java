@@ -12,7 +12,7 @@ public class GenericsEX<T1, T2>//generic class
         this.t1 = t1;
         this.t2 = t2;
     }
-    public <T>void  demo(T data)//generic method
+    public <T>void  demo(T data)
     {
         System.out.println("Generic method");
         System.out.println(data);
