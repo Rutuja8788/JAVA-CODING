@@ -1,0 +1,36 @@
+
+use rutuja;
+Select * From Info;
+Update  info set City="Sangamner" Where FirstName="Prathmesh";
+delete from Info where  City="Nimagav Jali";
+select * from Info where Age>20 and Age <25;
+select * from Info where Age >21 Or age >25;
+Select * From Info Where not age> 23;
+select * from info ;
+select * from Info Where  City Like'%Sa';
+Select * from Info Where Age between 22 and 35;
+SELECT * FROM Info
+UNION
+SELECT * FROM persons;
+SELECT * FROM Info
+UNION All 
+SELECT * FROM persons;
+select * from Info as Inforamation ;
+select PersonId as Per_id from Info;
+select * from Info;
+select City,Age  from info where EXISTS ( Select * from  persons where FirstName="shivam");
+  select min(Age) from info ;
+  select Max(Age) from Info;
+  select count(age) from Info;
+  select avg(age) from info;
+  select sum(Age) from info;
+  select distinct (FirstName) from info;
+  select * from info;
+select info.FirstName,info.City,persons.LastName,Persons.Age from info inner join persons on info.personId=persons.personId; 
+select info.FirstName,info.City,persons.LastName,Persons.Age from info Right join persons on info.personId=persons.personId; 
+select info.FirstName,info.City,persons.LastName,Persons.Age from info left join persons on info.personId=persons.personId; 
+select * from info cross join persons;
+select * from info;
+select avg(age) from info group by City;
+select * from info order by age;
+
